@@ -1,0 +1,48 @@
+﻿@model EndoriskProject.Models.romediagnosi
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>romediagnosi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.disease)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.disease)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diagnosis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diagnosis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rome)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

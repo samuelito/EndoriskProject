@@ -1,0 +1,50 @@
+﻿@model EndoriskProject.Models.disease
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>disease</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.disease1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.disease1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idRomeQuestion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idRomeQuestion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.criteria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.criteria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.comparedValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comparedValue)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idDiseases }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
