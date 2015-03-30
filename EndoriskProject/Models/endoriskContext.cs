@@ -16,22 +16,22 @@ namespace EndoriskProject.Models
         {
         }
 
-        public IDbSet<administrator> administrators { get; set; }
-        public IDbSet<comment> comments { get; set; }
-        public IDbSet<disease> diseases { get; set; }
-        public IDbSet<endoanswer> endoanswers { get; set; }
-        public IDbSet<endochoice> endochoices { get; set; }
-        public IDbSet<endoquestion> endoquestions { get; set; }
-        public IDbSet<patient> patients { get; set; }
-        public IDbSet<patientsymptom> patientsymptoms { get; set; }
-        public IDbSet<romeanswer> romeanswers { get; set; }
-        public IDbSet<romechoice> romechoices { get; set; }
-        public IDbSet<romedependency> romedependencies { get; set; }
-        public IDbSet<romediagnosi> romediagnosis { get; set; }
-        public IDbSet<romequestion> romequestions { get; set; }
-        public IDbSet<romequestionnaire> romequestionnaires { get; set; }
-        public IDbSet<severity> severities { get; set; }
-        public IDbSet<symptom> symptoms { get; set; }
+        public DbSet<administrator> administrators { get; set; }
+        public DbSet<comment> comments { get; set; }
+        public DbSet<disease> diseases { get; set; }
+        public DbSet<endoanswer> endoanswers { get; set; }
+        public DbSet<endochoice> endochoices { get; set; }
+        public DbSet<endoquestion> endoquestions { get; set; }
+        public DbSet<patient> patients { get; set; }
+        public DbSet<patientsymptom> patientsymptoms { get; set; }
+        public DbSet<romeanswer> romeanswers { get; set; }
+        public DbSet<romechoice> romechoices { get; set; }
+        public DbSet<romedependency> romedependencies { get; set; }
+        public DbSet<romediagnosi> romediagnosis { get; set; }
+        public DbSet<romequestion> romequestions { get; set; }
+        public DbSet<romequestionnaire> romequestionnaires { get; set; }
+        public DbSet<severity> severities { get; set; }
+        public DbSet<symptom> symptoms { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
